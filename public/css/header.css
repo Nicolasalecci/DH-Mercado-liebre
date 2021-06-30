@@ -1,0 +1,117 @@
+header{
+    background-color: #EAC926;    
+    padding: 0.8rem;     
+  }
+  #main-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }  
+  header figure{
+    width: 45%;
+    padding-right: 10px;   
+  }  
+  header figure a{    
+    width: 100%;    
+  }  
+  header form{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5vh;    
+  }
+  header form input{
+    font-size: 1.2rem;    
+    width: 95%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem; 
+  }
+  header form button{
+    border: none;
+    outline: none;    
+    font-size: 1.2rem;
+    cursor: pointer;  
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }  
+  header h2 {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }  
+  header nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }  
+  #nav-bar{
+    display: none;
+  }  
+  #burger-menu{
+    margin-top: 2.5vh;    
+    width: 100%;
+  }  
+  #burger-menu a{
+    padding: .25rem;
+    background-color:#1259c3;
+    border-radius: .5rem;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }  
+  a{
+    text-decoration: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    
+    #main-header{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content:space-between ;
+      align-items: center;
+      width: 100%;
+    }
+    #main-header figure{
+      width: 30%;
+    }
+    #main-header form{
+      width: 30%;
+      height: 3vh;
+    }
+    #main-header section{
+      width: 30%;
+      padding-top: 0px;
+    }
+    #main-header section h2{
+      padding-top: 0px;
+    }
+    #burger-menu{
+      display: none;
+    }
+    #nav-bar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.8rem 0;
+    } 
+    #nav-bar nav ul{
+      display: flex;            
+    }
+    #nav-bar nav ul li{
+      margin-right: 0.8rem;
+    }  
+    header nav ul li a{
+      color: #000;
+    }
+  }
+  
+   

@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Roboto"
+  }
+  html{
+    overflow-x: hidden;
+    width: 100vw;    
+  }
+  main {
+    background: #ebebeb;
+  }  
+  main img{
+    max-width: 100%;
+  } 
+  #banner img{
+    width: 100%;
+  }
+  main .articulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article{    
+    width: 90vw;    
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;      
+  }  
+  article figure{
+    border-bottom: 2px solid #ebebeb;
+  }
+  .precio-producto{    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 1rem 0.4rem 0.4rem;
+    position: relative;    
+  }
+  main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color:  #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px
+  }  
+  .titulares{
+    font-size: 1.5rem;
+    align-self: start;
+    padding: 1rem;
+    width: 100%;
+  }  
+  .titulares-secundarios{    
+    display: none;
+
+  } 
+  .precios{
+    font-size: 1rem;
+    width: 60%;
+  }  
+  .descuentos{
+    width:40%;
+    font-size: 0.7rem;
+    color: #39b54a;
+  }
+
+
+  @media screen and (min-width:361px) {  
+    main .articulos{
+      display: flex;
+      flex-flow:row wrap;
+      justify-content:space-evenly;
+      align-items: center;       
+    }
+    .articulos article{      
+      width: 40%;
+    }
+    .articulos article:hover{
+      box-shadow: 0 0 0.7rem rgb(100,100,100);      
+    } 
+    .articulos article:hover h3.titulares-secundarios{
+      display:block;
+      font-size: 0.8rem;
+      margin-top: 10px;     
+    }     
+      
+   
+  }
+
+
+  @media screen and (min-width:769px) {
+    
+    .articulos article{
+      width: 20%;      
+      padding: 1rem;
+    }         
+   
+  }
+
+

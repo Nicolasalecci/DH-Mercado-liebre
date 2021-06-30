@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    font-family: "Roboto";
+    background-color:#ebebeb;
+}
+main form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding:10vh
+}
+main [type=text],
+[type=email],
+[type=date],
+[type=password]{
+    width: 100%;
+    border: 0.8rem solid white;
+    border-radius: 0.25rem;
+    margin-bottom: 3vh;
+}
+main label[for=Edad]
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+form div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+form h1, h3
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+main label[for=foto]{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    cursor: pointer;
+}
+[type=file]{
+    display:none
+}
+[type=radio],
+[type=checkbox]{
+    margin:0 3vh 3vh 3vh
+}
+#buttons{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+main button{
+    border:none;
+    font-size: 1.1rem;
+    color:white;
+    background-color:#1259c3;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    width:35%;
+    cursor: pointer;
+}
+main label[for=foto]:hover{
+    color: #39b54a;
+    transition: all 0.3s;
+}
+
+@media screen and (min-width:360px){
+    form div{
+        display: block;        
+    }
+
+}
+  
